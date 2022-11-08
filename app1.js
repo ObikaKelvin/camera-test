@@ -37,14 +37,14 @@ window.addEventListener("load", cameraStart, false);
 
 
 // Install ServiceWorker
-if ('serviceWorker' in navigator) {
-  console.log('CLIENT: service worker registration in progress.');
-  navigator.serviceWorker.register( '/camera-app/part-2/sw.js' , { scope : ' ' } ).then(function() {
-    console.log('CLIENT: service worker registration complete.');
-  }, function() {
-    console.log('CLIENT: service worker registration failure.');
-  });
-} else {
-  console.log('CLIENT: service worker is not supported.');
-}
+// if ('serviceWorker' in navigator) {
+//   console.log('CLIENT: service worker registration in progress.');
+//   navigator.serviceWorker.register( '/camera-app/part-2/sw.js' , { scope : ' ' } ).then(function() {
+//     console.log('CLIENT: service worker registration complete.');
+//   }, function() {
+//     console.log('CLIENT: service worker registration failure.');
+//   });
+// } else {
+//   console.log('CLIENT: service worker is not supported.');
+// }
 
